@@ -1,12 +1,19 @@
-import { useState } from 'react'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-	  <div>Hello</div>
+	  <main className="main">
+		<div className="main-inner-wrap">
+			<section className="section-1">
+				Hello
+			</section>
+		</div>
+		<footer>
+			Footer
+		</footer>
+	  </main>
     </>
   )
 }
