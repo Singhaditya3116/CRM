@@ -1,0 +1,76 @@
+body{
+	background-color: #F5F7FA;
+}
+
+.section-1 {
+	max-width: 1352px;
+	padding: 16px;
+	margin: 0 auto;
+	height: calc(100vh - 64px);
+	display: flex;
+	gap: 16px;
+}
+
+
+.section-1 .left, .section-1 .right, .section-1 .center{
+	background-color: #FFF;
+	height: 100%;
+	border-radius: 12px;
+	padding: 16px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	overflow-y: auto;
+}
+
+.section-1 .left, .section-1 .right{
+	flex: 1 1 0;
+}
+
+.section-1 .center{
+	flex: 2 1 0;
+}
+
+
+.card .card-heading{
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 16px;
+}
+
+
+
+/* Email card */
+.email-wrapper{border: 1px solid gray;border-radius: 4px;}
+.email-wrapper .agent-suggestion{padding: 8px 16px; font-size: 12px;font-weight: 600;border-bottom: 1px solid gray;}
+.email-wrapper .email-card{padding: 16px;}
+.email-wrapper .email-card .title{display: flex;justify-content: space-between;margin-bottom: 8px;}
+.email-wrapper .email-card .title .title-left-wrap{display: flex;align-items: center;}
+.email-wrapper .email-card .title .profile{margin-right: 8px; width: 32px;height: 32px;border-radius: 50%;background-color: gray;flex-shrink: 0;}
+.email-wrapper .email-card .title .from{font-size: 12px;font-weight: 500;}
+.email-wrapper .email-card .title .to{font-size: 12px;color: gray;}
+.email-wrapper .email-card .email-body .message{margin-bottom: 8px;font-size: 12px;}
+.email-wrapper .email-card .track-link{margin-bottom: 8px; display: block;color: #2563EB;width: max-content;font-size: 12px;}
+/* Email card */
+
+
+
+/* Whatsapp Wrapper */
+.whatsapp-wrapper{display: flex; border: 1px solid gray;border-radius: 4px;margin-top: 16px;}
+.whatsapp-wrapper .profile-wrapper{display: flex;align-items: flex-start;align-self: flex-start; position: relative;margin-top: 4px;}
+.whatsapp-wrapper .profile-wrapper .user-p{width: 32px;height: 32px;border-radius: 50%;margin-right: 8px;}
+.whatsapp-wrapper .profile-wrapper .wa-p{position: absolute;bottom: 0;right: 0px; width: 12px;height: 12px;border-radius: 50%;}
+.whatsapp-wrapper .whatsapp-body{padding: 8px; background-color: red;}
+.whatsapp-wrapper .whatsapp-body .name{font-size: 12px;font-weight: 600;margin-bottom: 4px;color: gray;}
+.whatsapp-wrapper .whatsapp-body .message{font-size: 13px;margin-bottom: 4px;}
+.whatsapp-wrapper .whatsapp-body .time{font-size: 12px;}
+/* Whatsapp Wrapper */
+
+
+/* Notes wrapper */
+.notes-wrapper{padding: 0;margin: 0;}
+.notes-wrapper .note{padding: 8px 12px;font-size: 12px;color: #000; margin-bottom: 4px;background-color: #FEF3C7;border: 2px solid #FDE68A;border-radius: 4px;}
+.notes-wrapper .note .time{color:#9CA3AF;}
+.notes-wrapper .note:last-child{margin-bottom: 0;}
+/* Notes wrapper */
+
+.cta{display: flex;justify-content: center;align-items: center;padding: 8px 12px;background-color: #2563EB;font-size: 12px;color: #FFF;font-weight: 600;border-radius: 4px;}
+.cta .icon{margin-right: 8px;}
