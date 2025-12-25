@@ -1,3 +1,5 @@
+import getIcon from "./icons";
+
 const EmailCard = ({message}) => {
 	return (
 		<div className="email-wrapper">
@@ -26,7 +28,7 @@ const EmailCard = ({message}) => {
 					</a>
 
 					<button className="cta">
-						<span className="icon">{message?.mailReplyCta?.icon}</span>
+						<span className="icon">{getIcon("reply")}</span>
 						<span className="text">{message?.mailReplyCta?.text}</span>
 					</button>
 				</div>

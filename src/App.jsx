@@ -1,7 +1,7 @@
 import Notes from "./components/notes/Notes";
 import Contact from "./components/contact/Contact";
 import Conversations from "./components/conversations/Conversation";
-import layout from "./config/layout.json";
+import layout from "./utils/configs/layout.json";
 import "./App.css";
 
 const componentMap = {

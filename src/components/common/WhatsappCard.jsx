@@ -1,9 +1,13 @@
+import getIcon from "./icons";
+
 const WhatsappCard = ({ message }) => {
 	return (
 		<div className="whatsapp-wrapper">
 			<div className="profile-wrapper">
 				<img className="user-p" src={message?.profileImgUrl} alt={message?.sender} />
-				<img className="wa-p" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="Whatsapp Icon" />
+				<span className="wa-p">
+					{getIcon("whatsapp")}
+				</span>
 			</div>
 			<div className="whatsapp-body">
 				<div className="name">{message?.sender}</div>
