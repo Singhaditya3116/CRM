@@ -26,11 +26,13 @@ const EmailCard = ({message}) => {
 					<a href={message?.trackLink} className="track-link">
 						{message?.trackLinkText}
 					</a>
-
-					<button className="cta">
-						<span className="icon">{getIcon("reply")}</span>
-						<span className="text">{message?.mailReplyCta?.text}</span>
-					</button>
+					{
+						message?.mailReplyCta?.text && 
+						<button className="cta">
+							<span className="icon">{getIcon("reply")}</span>
+							<span className="text">{message?.mailReplyCta?.text}</span>
+						</button>
+					}
 				</div>
 			</div>
 		</div>
