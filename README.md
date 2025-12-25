@@ -1,5 +1,7 @@
 # CRM Contact Application
 
+**Live Demo**: [CRM Contact App](https://soft-cranachan-bc190c.netlify.app/)
+
 ## How to Run the App
 
 1. **Install Dependencies**:
@@ -32,7 +34,7 @@
 - **Frontend**: React.js
 - **Build Tool**: Vite
 - **State Management**: React Hooks (`useState`, `useEffect`)
-- **Styling**: CSS Modules / Inline Styles
+- **Styling**: Single CSS File (`App.css`)
 - **Icons**: Custom SVGs
 
 ---
