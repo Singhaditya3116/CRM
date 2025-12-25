@@ -1,0 +1,5 @@
+[
+  { "id": "contact", "position": "left", "component": "Contact" },
+  { "id": "conversations", "position": "center", "component": "Conversations" },
+  { "id": "notes", "position": "right", "component": "Notes" }
+]
