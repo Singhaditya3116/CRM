@@ -2,8 +2,8 @@ import getIcon from "./icons";
 
 const EmailCard = ({message}) => {
 	return (
-		<div className="email-wrapper">
-			<h2 className="agent-suggestion">{message?.actionSuggestion}</h2>
+		<div className={`email-wrapper ${message?.sender === "Agent" ? "agent-message" : ""}`}>
+			{message?.actionSuggestion && <h2 className="agent-suggestion">{message.actionSuggestion}</h2>}
 			<div className="email-card">
 				<div className="title">
 					<div className="title-left-wrap">

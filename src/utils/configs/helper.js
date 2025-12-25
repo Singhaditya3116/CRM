@@ -87,19 +87,5 @@ export const notes = [
 		text: `Customer mentioned that his pet has anxiety issues during grooming. Requested a specific time slot with less crowd. Make sure to allocate a calm handler for the session.`,
 		time: "2 hours ago",
 	},
-	{
-		id: 3,
-		text: `Discussed package upgrade options. Customer is considering the premium monthly grooming plan. Follow up in one week to check on their decision and offer any needed clarification, unless there is a change in course.`,
-		time: "1 hours ago",
-	},
-	{
-		id: 4,
-		text: `Discussed package upgrade options. Customer is considering the premium monthly grooming plan. Follow up in one week to check on their decision and offer any needed clarification, unless there is a change in course.`,
-		time: "1 hours ago",
-	},
-	{
-		id: 5,
-		text: `Discussed package upgrade options. Customer is considering the premium monthly grooming plan. Follow up in one week to check on their decision and offer any needed clarification, unless there is a change in course.`,
-		time: "1 hours ago",
-	},
+
 ];

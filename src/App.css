@@ -27,6 +27,17 @@ body{
 
 .section-1 .center{
 	flex: 2 1 0;
+	padding: 16px 16px 0 16px;
+	display: flex;
+	flex-direction: column;	
+	justify-content: space-between;
+}
+
+.section-1 .right{
+	display: flex;
+	flex-direction: column;	
+	justify-content: space-between;
+	padding: 16px 16px 0 16px;
 }
 
 
@@ -42,7 +53,7 @@ body{
 
 
 /* Email card */
-.email-wrapper{border: 1px solid gray;border-radius: 4px;}
+.email-wrapper{border: 1px solid gray;border-radius: 4px;margin-bottom: 16px;}
 .email-wrapper .agent-suggestion{padding: 8px 16px; font-size: 12px;font-weight: 600;border-bottom: 1px solid gray;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .email-wrapper .email-card{padding: 16px;}
 .email-wrapper .email-card .title{display: flex;justify-content: space-between;margin-bottom: 8px;}
@@ -57,7 +68,8 @@ body{
 
 
 /* Whatsapp Wrapper */
-.whatsapp-wrapper{display: flex; margin-top: 16px;}
+.whatsapp-wrapper{display: flex; margin-bottom: 16px;}
+.whatsapp-wrapper.agent-message{justify-content: flex-end;}
 .whatsapp-wrapper .profile-wrapper{display: flex;align-items: flex-start;align-self: flex-start; position: relative;margin-top: 4px;}
 .whatsapp-wrapper .profile-wrapper::after{content: "";position: absolute;top: -4px;right: -12px;z-index: 9;border-width: 12px 12px 12px 12px;border-color: #ECE5DD transparent transparent transparent;border-style: solid;}
 .whatsapp-wrapper .profile-wrapper .user-p{width: 32px;height: 32px;border-radius: 50%;margin-right: 8px;}
@@ -67,6 +79,12 @@ body{
 .whatsapp-wrapper .whatsapp-body .name{font-size: 12px;font-weight: 600;margin-bottom: 4px;color: gray;}
 .whatsapp-wrapper .whatsapp-body .message{font-size: 13px;margin-bottom: 4px;}
 .whatsapp-wrapper .whatsapp-body .time{font-size: 12px;}
+.conv-action{display: flex;position: sticky;left: 0;bottom: 0;z-index: 9;background-color: #FFF;}
+.conv-action .input-wrap{flex: 3;}
+.conv-action label{display: none;}
+.conv-action .input-wrap input{padding: 8px 16px;font-size: 15px;font-weight: 400;background-color: #FFF;}
+.conv-action select{flex: 1;align-self: center;margin-right: 8px;}
+.conv-action button{flex: 1;background-color: greenyellow; border-radius: 4px;align-self: center;}
 /* Whatsapp Wrapper */
 
 
@@ -75,6 +93,9 @@ body{
 .notes-wrapper .note{padding: 8px 12px;font-size: 12px;color: #000; margin-bottom: 6px;background-color: #FEF3C7;border: 2px solid #FDE68A;border-radius: 4px;}
 .notes-wrapper .note .time{color:#9CA3AF;}
 .notes-wrapper .note:last-child{margin-bottom: 0;}
+.notes-action{position: sticky;left: 0;bottom: 0;z-index: 9;display: flex;}
+.notes-action textarea{padding: 6px; background-color: white;flex: 2;border: 1px solid gray;border-radius: 4px;margin-right: 8px;}
+.notes-action .add-note-btn{background-color: greenyellow;flex: 1;border-radius: 4px;}
 /* Notes wrapper */
 
 
@@ -92,7 +113,6 @@ body{
 .summary-wrapper .details-wrapper .value{padding: 2px 8px; border: 1px solid gray;border-radius: 20px;}
 
 
-.summary-wrapper .tags-wrapper{}
 .summary-wrapper .tags-wrapper .label{color: gray;margin-bottom: 4px;font-size: 11px;}
 .summary-wrapper .tags-wrapper ul{display: flex;gap: 4px;}
 .summary-wrapper .tags-wrapper li{padding: 2px 6px;background-color: lightskyblue;color: #2563EB;font-weight: 500;border-radius: 4px;}

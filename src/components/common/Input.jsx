@@ -1,6 +1,6 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 
-const Input = ({label,name,type,value,onChange}) => {
+const Input = ({label,name,type,value,onChange,clearOnSubmit}) => {
 
 	const [inputValue,setInputValue] = useState(value);
 
@@ -9,10 +9,16 @@ const Input = ({label,name,type,value,onChange}) => {
 		onChange(e.target.value);
 	}
 
+	useEffect(() => {
+		if (clearOnSubmit) {
+			setInputValue("");
+		}
+	}, [clearOnSubmit]);
+
   return (
 	<div className='input-wrap'>
 		<label htmlFor={name}>{label}</label>
-		<input type={type} id={name} value={inputValue} onChange={onChangeHandler}/>
+		<input placeholder={label} type={type} id={name} value={inputValue} onChange={onChangeHandler}/>
 	</div>
   )
 }
