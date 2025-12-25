@@ -1,16 +1,79 @@
-# React + Vite
+# CRM Contact Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to Run the App
 
-Currently, two official plugins are available:
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. **Start the Development Server**:
+   ```bash
+   npm run dev
+   ```
 
-## React Compiler
+3. **Open the App**:
+   - Navigate to `http://localhost:3000` in your browser.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+4. **Build for Production**:
+   ```bash
+   npm run build
+   ```
 
-## Expanding the ESLint configuration
+5. **Preview Production Build**:
+   ```bash
+   npm run preview
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack Used
+
+- **Frontend**: React.js
+- **Build Tool**: Vite
+- **State Management**: React Hooks (`useState`, `useEffect`)
+- **Styling**: CSS Modules / Inline Styles
+- **Icons**: Custom SVGs
+
+---
+
+## Folder Structure
+
+```
+crm-contact/
+├── public/                # Static assets
+├── src/
+│   ├── assets/           # Images, fonts, and CSS
+│   │   ├── css/          # Global styles
+│   ├── components/       # React components
+│   │   ├── common/       # Reusable components (Button, Input, etc.)
+│   │   ├── contact/      # Contact-related components
+│   │   ├── conversations/ # Conversation-related components
+│   │   ├── notes/        # Notes-related components
+│   ├── utils/            # Utility functions and configurations
+│   │   ├── configs/      # JSON configurations (e.g., `helper.js`)
+│   ├── App.jsx           # Main app component
+│   ├── main.jsx          # Entry point
+├── vite.config.js        # Vite configuration
+├── package.json          # Project metadata and dependencies
+```
+
+---
+
+## How Each JSON Config is Used
+
+### `helper.js`
+- **Purpose**: Stores static data and configurations used across the app.
+- **Contents**:
+  - `schema`: Defines the structure of forms (e.g., fields for contact info).
+  - `formdata`: Predefined data for forms.
+  - `conversations`: Stores conversation data (email and WhatsApp messages).
+  - `notes`: Stores user notes.
+
+### `layout.json` (if applicable)
+- **Purpose**: Defines the layout structure for dynamically rendering components.
+- **Contents**: Specifies sections (e.g., `left`, `center`, `right`) and their associated components.
+
+---
+
+
